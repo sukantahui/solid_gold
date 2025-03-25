@@ -1,0 +1,6 @@
+[submodule "solid_gold_project"]
+	path = solid_gold_project
+	url = https://github.com/sukantahui/solid_gold_project.git
+[submodule "solid_gold_api"]
+	path = solid_gold_api
+	url = https://github.com/sukantahui/solid_gold_api.git
