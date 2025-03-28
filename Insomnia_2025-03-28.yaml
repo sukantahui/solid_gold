@@ -1,19 +1,13 @@
 type: collection.insomnia.rest/5.0
 name: Solid_gold
 meta:
-  id: wrk_b90c1b98574a499288f1fe6c8784bcdf
-  created: 1743172793137
-  modified: 1743172793137
+  id: wrk_b54bf5ab432a43638dcc390c40934180
+  created: 1743175652840
+  modified: 1743175652840
 collection:
-  - name: Customer
-    meta:
-      id: fld_e60868a0d09143e3851bd73ddfab4a06
-      created: 1743172877882
-      modified: 1743172877882
-      sortKey: -1743172877882
   - name: User
     meta:
-      id: fld_cec69afb9b3b48f8a3a939f3128c2c66
+      id: fld_88a38abc601349d187a95f6f89120832
       created: 1743173372251
       modified: 1743173372251
       sortKey: -1743173372251
@@ -21,7 +15,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
         name: Login
         meta:
-          id: req_2223a74ca6e444f8abdbe6b4d6f1903d
+          id: req_c9f3530651d74c7f9e5d39e932d441c9
           created: 1743172884136
           modified: 1743173444953
           isPrivate: false
@@ -50,9 +44,9 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/register
         name: Register
         meta:
-          id: req_6b1437ac95054e79aef5bb511e221a99
+          id: req_0cdd15efc7eb4d429e538ee5f716f9bd
           created: 1743173483076
-          modified: 1743174057133
+          modified: 1743176588134
           isPrivate: false
           sortKey: -1743173385609
         method: POST
@@ -60,21 +54,22 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"email": "admin2@gmail.com",
+            	"email": "admi4n@gmail3.com",
             	"password": "12345678",
-            	"password_confirm": "12345678",
+            	"password_confirmation": "12345678",
             	"employee_id": 1,
             	"user_type_id": 1
             }
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_1212d2185a5542a6855ede5ba0f6f438
+            id: pair_bcd04d82ad7948d28f505980bb544736
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_723193e2a21842ab98438423726d2e97
-          - id: pair_347e4d94499449419cea5e4363edd9e0
-            disabled: false
+            id: pair_22aef8c7ab6e406383b07a70536f944e
+          - name: Accept
+            value: application/json
+            id: pair_19235dca1872436fb4e0666076dac265
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -83,16 +78,185 @@ collection:
             send: true
             store: true
           rebuildPath: true
+  - name: Customer
+    meta:
+      id: fld_3955093922cc4a77bf4b0c8b026d45ec
+      created: 1743176656123
+      modified: 1743176656123
+      sortKey: -1743176656123
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
+        name: Get Customers
+        meta:
+          id: req_83b62fb9effd458096e88a8078176b91
+          created: 1743176662827
+          modified: 1743185260221
+          isPrivate: false
+          sortKey: -1743176662827
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_ca1c209cecec42bb82e5306ca1f65e36
+          - id: pair_14b03df453b645d59e4c095dc2b7d2cb
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
+        name: Save Customers
+        meta:
+          id: req_239421c3713a4f71bf1f1083daa9022c
+          created: 1743176831298
+          modified: 1743186881334
+          isPrivate: false
+          sortKey: -1743175024243
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "customerName": "Souravat",
+              "customerCategoryId": 1,
+              "mailingName": "M/S Ma55a Manasa Jewellers",
+              "email": "ma2436r6r5e462ra@gmail.com",
+              "phone": "676454546465",
+            	"mobile1": "676445446565",
+            	"mobile2": "776343644655773",
+            	"whatsapp": "43443454564",
+              "address": "123 Main S6treet, City, Country",
+              "pinCode": "12364566",
+              "openingGoldBalance": 10.5,
+              "openingCashBalance": 5000
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_55d1d8da6f3649f49726276820e30832
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_b67733679c8f40aeab7274fbf5df4c97
+          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|PQWAFku3dRCALVKqhTkDXLibwLmQ1pPRoO2jMcyd4b481886
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers/2
+        name: Update Customers
+        meta:
+          id: req_6604aa0377bd499483ba76088fb3427d
+          created: 1743184829047
+          modified: 1743189800638
+          isPrivate: false
+          sortKey: -1743174204951
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "customerCategoryId": 2,
+                "customerName": "Rabindra",
+                "mailingName": "Rabindra",
+                "email": "eeee@example.com",
+                "phone": "4645644456",
+                "mobile1": "46454645",
+            		"mobile2": "898883",
+                "address": "142f34 S4treet Name",
+            		"pinCode": "35354635",
+                "active": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_55d1d8da6f3649f49726276820e30832
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_b67733679c8f40aeab7274fbf5df4c97
+          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers/2
+        name: Get Customers by id
+        meta:
+          id: req_2cf6ba08e7c047809a0f1d88f57725ee
+          created: 1743187467878
+          modified: 1743187554784
+          isPrivate: false
+          sortKey: -1743175843535
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_ca1c209cecec42bb82e5306ca1f65e36
+          - id: pair_14b03df453b645d59e4c095dc2b7d2cb
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Customer
+    meta:
+      id: ws-req_846dceb9c12a42e698d805a00c97f056
+      created: 1743172877882
+      modified: 1743172877882
+      sortKey: -1743172877882
+    settings:
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_ff6e649eda7a469e32db73882a937656bd309938
+    id: jar_01d48f2f3f1a4556a93da8843317c49f
     created: 1743172793144
     modified: 1743172793144
 environments:
   name: Base Environment
   meta:
-    id: env_ff6e649eda7a469e32db73882a937656bd309938
+    id: env_01a31bf7ed9b4313aadc93e2c2e6fac6
     created: 1743172793140
     modified: 1743172793140
     isPrivate: false
