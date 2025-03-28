@@ -1,38 +1,160 @@
 {
     "clientName": "Thunder Client",
-    "collectionName": "Solid_gold_collection",
-    "collectionId": "1b127e4b-e2b4-45b1-9475-b0dbdc472ef9",
-    "dateExported": "2025-03-28T08:34:30.187Z",
+    "collectionName": "Solid_gold",
+    "collectionId": "9db78729-3f7c-41df-a16d-2bb54b83cc47",
+    "dateExported": "2025-03-28T10:14:05.320Z",
     "version": "1.2",
     "folders": [],
     "requests": [
         {
-            "_id": "d14c485b-61ff-49fb-9acd-ea5ea2293752",
-            "colId": "1b127e4b-e2b4-45b1-9475-b0dbdc472ef9",
+            "_id": "62c3d545-7847-4219-a218-02420a9401d9",
+            "colId": "9db78729-3f7c-41df-a16d-2bb54b83cc47",
             "containerId": "",
-            "name": "Login",
-            "url": "127.0.0.1/solid_gold/solid_gold_api/public/api/login",
+            "name": "Register User",
+            "url": "http://localhost/solid_gold/solid_gold_api/public/api/register",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2025-03-28T08:32:19.265Z",
-            "modified": "2025-03-28T08:33:32.346Z",
+            "created": "2025-03-28T09:48:29.692Z",
+            "modified": "2025-03-28T09:52:57.196Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "test@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "password_confirmation",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "employee_id",
+                        "value": "1"
+                    },
+                    {
+                        "name": "user_type_id",
+                        "value": "1"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "167955ea-6f64-4243-8df2-9ef117958f0e",
+            "colId": "9db78729-3f7c-41df-a16d-2bb54b83cc47",
+            "containerId": "",
+            "name": "Save Customers",
+            "url": "http://localhost/solid_gold/solid_gold_api/public/api/customers",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2025-03-28T10:00:38.562Z",
+            "modified": "2025-03-28T10:13:41.962Z",
             "headers": [
                 {
                     "name": "Accept",
                     "value": "application/json"
-                },
-                {
-                    "name": "User-Agent",
-                    "value": "Thunder Client (https://www.thunderclient.com)",
-                    "isDisabled": true
                 }
             ],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "raw": "{\r\n  \"customerName\": \"Maa Manasa Jewellers\",\r\n  \"customerCategoryId\": 1,\r\n  \"mailingName\": \"M/S Maa Manasa Jewellers\",\r\n  \"email\": \"maa@gmail.com\",\r\n  \"phone\": \"1234567890\",\r\n  \"address\": \"123 Main Street, City, Country\",\r\n  \"pinCode\": \"123456\",\r\n  \"openingGoldBalance\": 10.5,\r\n  \"openingCashBalance\": 5000\r\n}",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|Sn4dYtqswM8XCf5V9wjguuKr2mYBlWXwj3rm02xs581365a5"
+            }
+        },
+        {
+            "_id": "a1a0f29d-e73a-4cee-8455-63161e92f2a5",
+            "colId": "9db78729-3f7c-41df-a16d-2bb54b83cc47",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost/solid_gold/solid_gold_api/public/api/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-03-28T09:53:15.674Z",
+            "modified": "2025-03-28T09:54:27.021Z",
+            "headers": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "test@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "password_confirmation",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "employee_id",
+                        "value": "1"
+                    },
+                    {
+                        "name": "user_type_id",
+                        "value": "1"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "930eb2fa-4527-469e-a934-e8348d1fd290",
+            "colId": "9db78729-3f7c-41df-a16d-2bb54b83cc47",
+            "containerId": "",
+            "name": "User by Authkey",
+            "url": "http://localhost/solid_gold/solid_gold_api/public/api/me",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-03-28T09:57:55.110Z",
+            "modified": "2025-03-28T10:00:17.928Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "test@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "password_confirmation",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "employee_id",
+                        "value": "1"
+                    },
+                    {
+                        "name": "user_type_id",
+                        "value": "1"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|Sn4dYtqswM8XCf5V9wjguuKr2mYBlWXwj3rm02xs581365a5"
             }
         }
     ],
-    "ref": "Vd4CdRs4b9vgTYMF6zGgHJzGaGEFpSIErGQ4RJIOIgswuenunhkHZEKUzeUZoA88yjr7h9lh_IqDTR2HYKuKcQ"
+    "ref": "dNL4mq6ZVYfOjMHGW-dCaLC9luLqO6iUDI30HpHy_P19GrbOLxAl3izOAbL72uFLs8GWM2RLqWyxgLNNn71L5Q"
 }
