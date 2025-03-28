@@ -1,0 +1,98 @@
+type: collection.insomnia.rest/5.0
+name: Solid_gold
+meta:
+  id: wrk_b90c1b98574a499288f1fe6c8784bcdf
+  created: 1743172793137
+  modified: 1743172793137
+collection:
+  - name: Customer
+    meta:
+      id: fld_e60868a0d09143e3851bd73ddfab4a06
+      created: 1743172877882
+      modified: 1743172877882
+      sortKey: -1743172877882
+  - name: User
+    meta:
+      id: fld_cec69afb9b3b48f8a3a939f3128c2c66
+      created: 1743173372251
+      modified: 1743173372251
+      sortKey: -1743173372251
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
+        name: Login
+        meta:
+          id: req_2223a74ca6e444f8abdbe6b4d6f1903d
+          created: 1743172884136
+          modified: 1743173444953
+          isPrivate: false
+          sortKey: -1743173385659
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "admin@gmail.com",
+            	"password": "12345678"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/register
+        name: Register
+        meta:
+          id: req_6b1437ac95054e79aef5bb511e221a99
+          created: 1743173483076
+          modified: 1743174057133
+          isPrivate: false
+          sortKey: -1743173385609
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "admin2@gmail.com",
+            	"password": "12345678",
+            	"password_confirm": "12345678",
+            	"employee_id": 1,
+            	"user_type_id": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_1212d2185a5542a6855ede5ba0f6f438
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_723193e2a21842ab98438423726d2e97
+          - id: pair_347e4d94499449419cea5e4363edd9e0
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ff6e649eda7a469e32db73882a937656bd309938
+    created: 1743172793144
+    modified: 1743172793144
+environments:
+  name: Base Environment
+  meta:
+    id: env_ff6e649eda7a469e32db73882a937656bd309938
+    created: 1743172793140
+    modified: 1743172793140
+    isPrivate: false
