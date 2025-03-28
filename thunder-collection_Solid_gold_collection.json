@@ -1,0 +1,38 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Solid_gold_collection",
+    "collectionId": "1b127e4b-e2b4-45b1-9475-b0dbdc472ef9",
+    "dateExported": "2025-03-28T08:34:30.187Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d14c485b-61ff-49fb-9acd-ea5ea2293752",
+            "colId": "1b127e4b-e2b4-45b1-9475-b0dbdc472ef9",
+            "containerId": "",
+            "name": "Login",
+            "url": "127.0.0.1/solid_gold/solid_gold_api/public/api/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-03-28T08:32:19.265Z",
+            "modified": "2025-03-28T08:33:32.346Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Vd4CdRs4b9vgTYMF6zGgHJzGaGEFpSIErGQ4RJIOIgswuenunhkHZEKUzeUZoA88yjr7h9lh_IqDTR2HYKuKcQ"
+}
