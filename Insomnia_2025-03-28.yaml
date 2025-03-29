@@ -17,7 +17,7 @@ collection:
         meta:
           id: req_c9f3530651d74c7f9e5d39e932d441c9
           created: 1743172884136
-          modified: 1743173444953
+          modified: 1743240457498
           isPrivate: false
           sortKey: -1743173385659
         method: POST
@@ -31,8 +31,16 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
+            id: pair_a10527d2b6294d3fa9b2bf0f8f8be583
           - name: User-Agent
             value: insomnia/11.0.1
+            id: pair_152dca1e536140da98cf54b4f2533f65
+          - id: pair_6532247a48a84dc69189b2588ab1c3c0
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -90,7 +98,7 @@ collection:
         meta:
           id: req_83b62fb9effd458096e88a8078176b91
           created: 1743176662827
-          modified: 1743185260221
+          modified: 1743242900051
           isPrivate: false
           sortKey: -1743176662827
         method: GET
@@ -104,7 +112,7 @@ collection:
             disabled: false
         authentication:
           type: bearer
-          token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -166,15 +174,15 @@ collection:
         meta:
           id: req_6604aa0377bd499483ba76088fb3427d
           created: 1743184829047
-          modified: 1743189800638
+          modified: 1743238132435
           isPrivate: false
           sortKey: -1743174204951
         method: PUT
         body:
           mimeType: application/json
-          text: |-
+          text: |
             {
-                "customerCategoryId": 2,
+                "customerCategoryId": 3,
                 "customerName": "Rabindra",
                 "mailingName": "Rabindra",
                 "email": "eeee@example.com",
@@ -198,7 +206,7 @@ collection:
             disabled: false
         authentication:
           type: bearer
-          token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+          token: 1|3ahsAVPGKqhsJiux5QGcrK8HetXORkJl1ZxIcVnv77ab8c54
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -227,6 +235,105 @@ collection:
         authentication:
           type: bearer
           token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Customer Categories
+    meta:
+      id: fld_14d1f6212c084a5eb11eae5bcc1828df
+      created: 1743224073143
+      modified: 1743224073143
+      sortKey: -1743224073143
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories/4
+        name: Delete Customer Categories
+        meta:
+          id: req_6173c5e5027a426fafe3849a6b32f74c
+          created: 1743224081513
+          modified: 1743240723682
+          isPrivate: false
+          sortKey: -1743224081513
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_101fd81e8cdb465c878f28c7abdc86fb
+          - id: pair_ecba2a12c6a848a6b8d99c31674312ab
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories
+        name: get all Categories
+        meta:
+          id: req_b11b23e1569243aa9e3966950ac393bb
+          created: 1743224619107
+          modified: 1743240673327
+          isPrivate: false
+          sortKey: -1743200372170
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_a6b24ad43f8b46ada9316a48e3d0c6f3
+          - id: pair_e4a17d37d99e4e3f924dc2d687f1fa90
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories/2
+        name: Update  Categorie
+        meta:
+          id: req_02786705de2549d08ddb5111988d19e8
+          created: 1743239888496
+          modified: 1743242794249
+          isPrivate: false
+          sortKey: -1743188517498.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"customerCategoryName": "I dont know 752"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_a6b24ad43f8b46ada9316a48e3d0c6f3
+          - id: pair_e4a17d37d99e4e3f924dc2d687f1fa90
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
         settings:
           renderRequestBody: true
           encodeUrl: true
