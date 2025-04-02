@@ -17,7 +17,7 @@ collection:
         meta:
           id: req_c9f3530651d74c7f9e5d39e932d441c9
           created: 1743172884136
-          modified: 1743240457498
+          modified: 1743484652910
           isPrivate: false
           sortKey: -1743173385659
         method: POST
@@ -41,6 +41,7 @@ collection:
             disabled: false
         authentication:
           type: bearer
+          token: 1|MzcU1us2tPXeYwiQ5fUpdoz5HrB2DS3huFyZtA0z31a8c541
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -283,7 +284,7 @@ collection:
         meta:
           id: req_b11b23e1569243aa9e3966950ac393bb
           created: 1743224619107
-          modified: 1743240673327
+          modified: 1743275658393
           isPrivate: false
           sortKey: -1743200372170
         method: GET
@@ -334,6 +335,332 @@ collection:
         authentication:
           type: bearer
           token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Product Categories
+    meta:
+      id: fld_82286582e89445baa79e812580e7d9e5
+      created: 1743273900966
+      modified: 1743273900966
+      sortKey: -1743273900966
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories
+        name: Save Product Category
+        meta:
+          id: req_c413c3bc205f436b8b5b685099ea2ead
+          created: 1743273963231
+          modified: 1743332495070
+          isPrivate: false
+          sortKey: -1743273963232
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"productCategoryName": "test 2 ",
+            	"productCategoryDescription": "Simple bala"
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_49bbdc87c36043adbf01fe8e18973425
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
+          - id: pair_d8c404c6502540b1a7addc3278d3f841
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|81MAQ377Rq3CKIWYsX6VYmoqKjrmhU26XSKAesuq28ba5b3b
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/3
+        name: Update Product Category
+        meta:
+          id: req_a970d8716b96436c83ec1e894ae959c4
+          created: 1743280276655
+          modified: 1743281168917
+          isPrivate: false
+          sortKey: -1743249022372.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	
+              "productCategoryName": "Updated Electronics 2323",
+              "productCategoryDescription": "All electronic devices including smartphones and laptops",
+              "inforce": true
+
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_49bbdc87c36043adbf01fe8e18973425
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
+          - id: pair_d8c404c6502540b1a7addc3278d3f841
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|qVG4xBpSs5UIeUQT0cF9dfAsePquCUy8Fb9IDPdOdbfd59e1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories
+        name: Get all Product Categories
+        meta:
+          id: req_4da9caa2ca6f49a58977a2364d9bc0ce
+          created: 1743332224874
+          modified: 1743332482587
+          isPrivate: false
+          sortKey: -1743236551942.75
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_49bbdc87c36043adbf01fe8e18973425
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
+          - id: pair_d8c404c6502540b1a7addc3278d3f841
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|81MAQ377Rq3CKIWYsX6VYmoqKjrmhU26XSKAesuq28ba5b3b
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/2
+        name: Delete Product Category
+        meta:
+          id: req_1bc0d5f9ce1d4cb4966f7abf85561c44
+          created: 1743333241918
+          modified: 1743333289544
+          isPrivate: false
+          sortKey: -1743242787157.625
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	
+              "productCategoryName": "Updated Electronics 2323",
+              "productCategoryDescription": "All electronic devices including smartphones and laptops",
+              "inforce": true
+
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_49bbdc87c36043adbf01fe8e18973425
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
+          - id: pair_d8c404c6502540b1a7addc3278d3f841
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|81MAQ377Rq3CKIWYsX6VYmoqKjrmhU26XSKAesuq28ba5b3b
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Order
+    meta:
+      id: fld_1710243bd8c94d1ab45fb120c7b4b446
+      created: 1743422047880
+      modified: 1743422047880
+      sortKey: -1743422047880
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
+        name: Save Order
+        meta:
+          id: req_a1bfdc9f37044c979bd8ffddbd42598f
+          created: 1743422069057
+          modified: 1743508693536
+          isPrivate: false
+          sortKey: -1743422078497
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "orderMaster": {
+                "agentId": 1,
+                "customerId": 1,
+                "orderNote": "Handle with care"
+              },
+              "orderDetails": [
+                {
+                  "productId": 1,
+                  "quantity": 4,
+                  "gini": 2.34,
+                  "wastegePercentage": 5.50,
+                  "productSize": "2-3-4"
+                },
+            		{
+                  "productId": 2,
+                  "quantity": 3,
+                  "gini": 22.64,
+                  "wastegePercentage": 4.50,
+                  "productSize": "2-8-4"
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_55d1d8da6f3649f49726276820e30832
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_b67733679c8f40aeab7274fbf5df4c97
+          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
+        name: get All Orders
+        meta:
+          id: req_0da960e3bea54ed99fa357e4938bc66b
+          created: 1743576388542
+          modified: 1743576404698
+          isPrivate: false
+          sortKey: -1743348020864.5
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_55d1d8da6f3649f49726276820e30832
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_b67733679c8f40aeab7274fbf5df4c97
+          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders?paginate=true
+        name: get All Orders with pagination
+        meta:
+          id: req_18ed10b06bf74679a4943058b242a568
+          created: 1743577148785
+          modified: 1743577196260
+          isPrivate: false
+          sortKey: -1743310992048.25
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_55d1d8da6f3649f49726276820e30832
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_b67733679c8f40aeab7274fbf5df4c97
+          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://127.0.0.1/solid_gold/solid_gold_api/public/api/orders?page=2
+        name: test get All Orders with pagination
+        meta:
+          id: req_252a22c1d39d4c10bdf8623a2defa170
+          created: 1743577240296
+          modified: 1743577271537
+          isPrivate: false
+          sortKey: -1743292477640.125
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_55d1d8da6f3649f49726276820e30832
+          - name: User-Agent
+            value: insomnia/11.0.1
+            id: pair_b67733679c8f40aeab7274fbf5df4c97
+          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
+            name: Accept
+            value: application/json
+            disabled: false
+        authentication:
+          type: bearer
+          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
         settings:
           renderRequestBody: true
           encodeUrl: true
