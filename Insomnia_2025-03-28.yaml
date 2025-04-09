@@ -1,13 +1,13 @@
 type: collection.insomnia.rest/5.0
 name: Solid_gold
 meta:
-  id: wrk_b54bf5ab432a43638dcc390c40934180
-  created: 1743175652840
-  modified: 1743175652840
+  id: wrk_a1c6a81f56374b288708ca109de6837c
+  created: 1743606920398
+  modified: 1743606920398
 collection:
   - name: User
     meta:
-      id: fld_88a38abc601349d187a95f6f89120832
+      id: fld_08d38ceeebc34551beda030713b4ebfd
       created: 1743173372251
       modified: 1743173372251
       sortKey: -1743173372251
@@ -15,7 +15,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
         name: Login
         meta:
-          id: req_c9f3530651d74c7f9e5d39e932d441c9
+          id: req_a1ad639b1e234120afe9d1e63e95f6dc
           created: 1743172884136
           modified: 1743484652910
           isPrivate: false
@@ -31,14 +31,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_a10527d2b6294d3fa9b2bf0f8f8be583
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_152dca1e536140da98cf54b4f2533f65
-          - id: pair_6532247a48a84dc69189b2588ab1c3c0
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|MzcU1us2tPXeYwiQ5fUpdoz5HrB2DS3huFyZtA0z31a8c541
@@ -53,7 +49,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/register
         name: Register
         meta:
-          id: req_0cdd15efc7eb4d429e538ee5f716f9bd
+          id: req_1da0bdd2a5024214b2d664c3bc557b25
           created: 1743173483076
           modified: 1743176588134
           isPrivate: false
@@ -72,13 +68,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_bcd04d82ad7948d28f505980bb544736
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_22aef8c7ab6e406383b07a70536f944e
           - name: Accept
             value: application/json
-            id: pair_19235dca1872436fb4e0666076dac265
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -89,7 +82,7 @@ collection:
           rebuildPath: true
   - name: Customer
     meta:
-      id: fld_3955093922cc4a77bf4b0c8b026d45ec
+      id: fld_2b834231c8e8408ca80ecc0ea894e547
       created: 1743176656123
       modified: 1743176656123
       sortKey: -1743176656123
@@ -97,23 +90,20 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
         name: Get Customers
         meta:
-          id: req_83b62fb9effd458096e88a8078176b91
+          id: req_8c367a0ef26d4776a1d4e5c4cb3dc40f
           created: 1743176662827
-          modified: 1743242900051
+          modified: 1743609705836
           isPrivate: false
           sortKey: -1743176662827
         method: GET
         headers:
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_ca1c209cecec42bb82e5306ca1f65e36
-          - id: pair_14b03df453b645d59e4c095dc2b7d2cb
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
-          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+          token: 1|lHW4qGZ475RcvARhyx8IH2DPvbERIXxtp2fIpwi02dabc3ce
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -125,7 +115,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
         name: Save Customers
         meta:
-          id: req_239421c3713a4f71bf1f1083daa9022c
+          id: req_a13c88f324ab45ec987c603f69f4a321
           created: 1743176831298
           modified: 1743186881334
           isPrivate: false
@@ -151,14 +141,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_55d1d8da6f3649f49726276820e30832
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_b67733679c8f40aeab7274fbf5df4c97
-          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|PQWAFku3dRCALVKqhTkDXLibwLmQ1pPRoO2jMcyd4b481886
@@ -173,7 +159,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers/2
         name: Update Customers
         meta:
-          id: req_6604aa0377bd499483ba76088fb3427d
+          id: req_8e9746fc08994729857b973970396001
           created: 1743184829047
           modified: 1743238132435
           isPrivate: false
@@ -197,14 +183,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_55d1d8da6f3649f49726276820e30832
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_b67733679c8f40aeab7274fbf5df4c97
-          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|3ahsAVPGKqhsJiux5QGcrK8HetXORkJl1ZxIcVnv77ab8c54
@@ -219,23 +201,20 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers/2
         name: Get Customers by id
         meta:
-          id: req_2cf6ba08e7c047809a0f1d88f57725ee
+          id: req_048dfaec07a84579b5c8c484a372a21b
           created: 1743187467878
-          modified: 1743187554784
+          modified: 1743610423047
           isPrivate: false
           sortKey: -1743175843535
         method: GET
         headers:
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_ca1c209cecec42bb82e5306ca1f65e36
-          - id: pair_14b03df453b645d59e4c095dc2b7d2cb
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
-          token: 2|iDJ7rUuOhQQFMoe7ooDjCKXqQNMQ0SbsG5Kckl0sb6fb2bad
+          token: 1|lHW4qGZ475RcvARhyx8IH2DPvbERIXxtp2fIpwi02dabc3ce
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -246,7 +225,7 @@ collection:
           rebuildPath: true
   - name: Customer Categories
     meta:
-      id: fld_14d1f6212c084a5eb11eae5bcc1828df
+      id: fld_b4260ff7c15e45009f43619344697ca6
       created: 1743224073143
       modified: 1743224073143
       sortKey: -1743224073143
@@ -254,7 +233,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories/4
         name: Delete Customer Categories
         meta:
-          id: req_6173c5e5027a426fafe3849a6b32f74c
+          id: req_b3b72e6283474e4888ec446d0b9e4459
           created: 1743224081513
           modified: 1743240723682
           isPrivate: false
@@ -263,11 +242,8 @@ collection:
         headers:
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_101fd81e8cdb465c878f28c7abdc86fb
-          - id: pair_ecba2a12c6a848a6b8d99c31674312ab
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
@@ -282,7 +258,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories
         name: get all Categories
         meta:
-          id: req_b11b23e1569243aa9e3966950ac393bb
+          id: req_6e5bc18ca4ca4f01afef508fb355f379
           created: 1743224619107
           modified: 1743275658393
           isPrivate: false
@@ -291,11 +267,8 @@ collection:
         headers:
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_a6b24ad43f8b46ada9316a48e3d0c6f3
-          - id: pair_e4a17d37d99e4e3f924dc2d687f1fa90
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
@@ -310,7 +283,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories/2
         name: Update  Categorie
         meta:
-          id: req_02786705de2549d08ddb5111988d19e8
+          id: req_7d6f806976174051af1b30a7af95c639
           created: 1743239888496
           modified: 1743242794249
           isPrivate: false
@@ -327,11 +300,8 @@ collection:
             value: application/json
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_a6b24ad43f8b46ada9316a48e3d0c6f3
-          - id: pair_e4a17d37d99e4e3f924dc2d687f1fa90
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
@@ -345,7 +315,7 @@ collection:
           rebuildPath: true
   - name: Product Categories
     meta:
-      id: fld_82286582e89445baa79e812580e7d9e5
+      id: fld_16d522673c454372ad9a2a9632e38799
       created: 1743273900966
       modified: 1743273900966
       sortKey: -1743273900966
@@ -353,7 +323,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories
         name: Save Product Category
         meta:
-          id: req_c413c3bc205f436b8b5b685099ea2ead
+          id: req_7abb228a05e9436880b99e4875788902
           created: 1743273963231
           modified: 1743332495070
           isPrivate: false
@@ -370,14 +340,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_49bbdc87c36043adbf01fe8e18973425
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
-          - id: pair_d8c404c6502540b1a7addc3278d3f841
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|81MAQ377Rq3CKIWYsX6VYmoqKjrmhU26XSKAesuq28ba5b3b
@@ -392,7 +358,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/3
         name: Update Product Category
         meta:
-          id: req_a970d8716b96436c83ec1e894ae959c4
+          id: req_e90e2398faf54565b4db56bbede79689
           created: 1743280276655
           modified: 1743281168917
           isPrivate: false
@@ -407,19 +373,16 @@ collection:
               "productCategoryDescription": "All electronic devices including smartphones and laptops",
               "inforce": true
 
+
             	
             }
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_49bbdc87c36043adbf01fe8e18973425
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
-          - id: pair_d8c404c6502540b1a7addc3278d3f841
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|qVG4xBpSs5UIeUQT0cF9dfAsePquCUy8Fb9IDPdOdbfd59e1
@@ -434,9 +397,9 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories
         name: Get all Product Categories
         meta:
-          id: req_4da9caa2ca6f49a58977a2364d9bc0ce
+          id: req_3b00827045c04b9280d41451f3b8c2e8
           created: 1743332224874
-          modified: 1743332482587
+          modified: 1744209594864
           isPrivate: false
           sortKey: -1743236551942.75
         method: GET
@@ -445,17 +408,13 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_49bbdc87c36043adbf01fe8e18973425
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
-          - id: pair_d8c404c6502540b1a7addc3278d3f841
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
-          token: 1|81MAQ377Rq3CKIWYsX6VYmoqKjrmhU26XSKAesuq28ba5b3b
+          token: 3|efRDJ7OjEramcnNi8ZQAw7cIq9Bs8U0YVoVuJsY4a5535535
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -467,7 +426,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/2
         name: Delete Product Category
         meta:
-          id: req_1bc0d5f9ce1d4cb4966f7abf85561c44
+          id: req_93c8d97cbff147229af5fb6af49d1e0d
           created: 1743333241918
           modified: 1743333289544
           isPrivate: false
@@ -482,19 +441,16 @@ collection:
               "productCategoryDescription": "All electronic devices including smartphones and laptops",
               "inforce": true
 
+
             	
             }
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_49bbdc87c36043adbf01fe8e18973425
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_1e2c4c14d7ec4483a8d9630687824b5f
-          - id: pair_d8c404c6502540b1a7addc3278d3f841
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|81MAQ377Rq3CKIWYsX6VYmoqKjrmhU26XSKAesuq28ba5b3b
@@ -508,7 +464,7 @@ collection:
           rebuildPath: true
   - name: Order
     meta:
-      id: fld_1710243bd8c94d1ab45fb120c7b4b446
+      id: fld_abd0e2b18cd748e88986858a24d41e5b
       created: 1743422047880
       modified: 1743422047880
       sortKey: -1743422047880
@@ -516,7 +472,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
         name: Save Order
         meta:
-          id: req_a1bfdc9f37044c979bd8ffddbd42598f
+          id: req_d0a8012e92bd4ac59f518a3503003f34
           created: 1743422069057
           modified: 1743508693536
           isPrivate: false
@@ -551,14 +507,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_55d1d8da6f3649f49726276820e30832
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_b67733679c8f40aeab7274fbf5df4c97
-          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
@@ -573,7 +525,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
         name: get All Orders
         meta:
-          id: req_0da960e3bea54ed99fa357e4938bc66b
+          id: req_56c54e78841342eabd9ea75254e05568
           created: 1743576388542
           modified: 1743576404698
           isPrivate: false
@@ -584,14 +536,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_55d1d8da6f3649f49726276820e30832
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_b67733679c8f40aeab7274fbf5df4c97
-          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
@@ -606,7 +554,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders?paginate=true
         name: get All Orders with pagination
         meta:
-          id: req_18ed10b06bf74679a4943058b242a568
+          id: req_8dc59bcb873f48beb9b1192abb194984
           created: 1743577148785
           modified: 1743577196260
           isPrivate: false
@@ -617,14 +565,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_55d1d8da6f3649f49726276820e30832
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_b67733679c8f40aeab7274fbf5df4c97
-          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
@@ -639,7 +583,7 @@ collection:
       - url: http://127.0.0.1/solid_gold/solid_gold_api/public/api/orders?page=2
         name: test get All Orders with pagination
         meta:
-          id: req_252a22c1d39d4c10bdf8623a2defa170
+          id: req_e46c0a19a1294e048015e0c281aa27c7
           created: 1743577240296
           modified: 1743577271537
           isPrivate: false
@@ -650,14 +594,10 @@ collection:
         headers:
           - name: Content-Type
             value: application/json
-            id: pair_55d1d8da6f3649f49726276820e30832
           - name: User-Agent
             value: insomnia/11.0.1
-            id: pair_b67733679c8f40aeab7274fbf5df4c97
-          - id: pair_dbda065ec5b4424fbfe7bde4ed7afe61
-            name: Accept
+          - name: Accept
             value: application/json
-            disabled: false
         authentication:
           type: bearer
           token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
@@ -669,9 +609,49 @@ collection:
             send: true
             store: true
           rebuildPath: true
+  - name: Price Code
+    meta:
+      id: fld_0fd3bd53be9d4840ba6e482caa7b3c65
+      created: 1744211153125
+      modified: 1744211153125
+      sortKey: -1744211153125
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/price-codes
+        name: Save Price Code
+        meta:
+          id: req_6e7f76c887ba4ba59df8f8d6e893edd4
+          created: 1744211175759
+          modified: 1744213009764
+          isPrivate: false
+          sortKey: -1744211181111
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"priceCodeName": "P"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 3|efRDJ7OjEramcnNi8ZQAw7cIq9Bs8U0YVoVuJsY4a5535535
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: Customer
     meta:
-      id: ws-req_846dceb9c12a42e698d805a00c97f056
+      id: ws-req_c5ba2f1ff7bf4f1cacb2caeb71304e68
       created: 1743172877882
       modified: 1743172877882
       sortKey: -1743172877882
@@ -684,13 +664,13 @@ collection:
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_01d48f2f3f1a4556a93da8843317c49f
+    id: jar_15c109e3b13f46cdae77b52411629028
     created: 1743172793144
     modified: 1743172793144
 environments:
   name: Base Environment
   meta:
-    id: env_01a31bf7ed9b4313aadc93e2c2e6fac6
+    id: env_5e62955f5f0645128fa7e68ec955af0d
     created: 1743172793140
     modified: 1743172793140
     isPrivate: false
