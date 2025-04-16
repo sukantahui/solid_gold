@@ -17,7 +17,7 @@ collection:
         meta:
           id: req_a1ad639b1e234120afe9d1e63e95f6dc
           created: 1743172884136
-          modified: 1743484652910
+          modified: 1744818616211
           isPrivate: false
           sortKey: -1743173385659
         method: POST
@@ -474,7 +474,7 @@ collection:
         meta:
           id: req_d0a8012e92bd4ac59f518a3503003f34
           created: 1743422069057
-          modified: 1743508693536
+          modified: 1744820587168
           isPrivate: false
           sortKey: -1743422078497
         method: POST
@@ -513,7 +513,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -621,7 +621,7 @@ collection:
         meta:
           id: req_6e7f76c887ba4ba59df8f8d6e893edd4
           created: 1744211175759
-          modified: 1744213009764
+          modified: 1744214177872
           isPrivate: false
           sortKey: -1744211181111
         method: POST
@@ -629,7 +629,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"priceCodeName": "P"
+            	"priceCodeName": "r"
             }
         headers:
           - name: Content-Type
@@ -641,6 +641,147 @@ collection:
         authentication:
           type: bearer
           token: 3|efRDJ7OjEramcnNi8ZQAw7cIq9Bs8U0YVoVuJsY4a5535535
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/price-codes
+        name: Get Price Codes
+        meta:
+          id: req_41b977bb14e641559b8900d3fa83ba66
+          created: 1744213794517
+          modified: 1744213855575
+          isPrivate: false
+          sortKey: -1743816629804
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 3|efRDJ7OjEramcnNi8ZQAw7cIq9Bs8U0YVoVuJsY4a5535535
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Gold Transaction
+    meta:
+      id: fld_a0c3dee6f049455497ebf7258d3415f6
+      created: 1744817571014
+      modified: 1744817571014
+      sortKey: -1744817571014
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/gold-transactions
+        name: Get All Gold Transactions
+        meta:
+          id: req_21e8addff4e142fe8abe30628c00319b
+          created: 1744817617403
+          modified: 1744818737849
+          isPrivate: false
+          sortKey: -1744817630196
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/gold-transactions
+        name: Save Gold Transactions
+        meta:
+          id: req_4adbf23b20ef40228e2d3d6788f89393
+          created: 1744817730853
+          modified: 1744823211712
+          isPrivate: false
+          sortKey: -1744817630296
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"transactionDate": "2025-04-14",
+            	"customerId": 2,
+            	"agentId": 1,
+            	"orderMasterId": 1,
+            	"goldValue": 2000,
+            	"goldRate": 5,
+            	"goldCash": 1000000,
+            	"transactionTypeId": 1
+             }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Agent
+    meta:
+      id: fld_f71f641174254c9fa251842efa99650c
+      created: 1744822519301
+      modified: 1744822519301
+      sortKey: -1744822519302
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/agents
+        name: Get All Agents
+        meta:
+          id: req_f6fd4bafc2ab4ab49e0e924e7b8182b6
+          created: 1744822535276
+          modified: 1744822565660
+          isPrivate: false
+          sortKey: -1744822553074
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
         settings:
           renderRequestBody: true
           encodeUrl: true
