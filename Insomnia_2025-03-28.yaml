@@ -9,7 +9,7 @@ collection:
     meta:
       id: fld_08d38ceeebc34551beda030713b4ebfd
       created: 1743173372251
-      modified: 1743173372251
+      modified: 1744860839780
       sortKey: -1743173372251
     children:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
@@ -17,7 +17,7 @@ collection:
         meta:
           id: req_a1ad639b1e234120afe9d1e63e95f6dc
           created: 1743172884136
-          modified: 1744818616211
+          modified: 1744859819143
           isPrivate: false
           sortKey: -1743173385659
         method: POST
@@ -37,7 +37,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MzcU1us2tPXeYwiQ5fUpdoz5HrB2DS3huFyZtA0z31a8c541
+          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -84,7 +84,7 @@ collection:
     meta:
       id: fld_2b834231c8e8408ca80ecc0ea894e547
       created: 1743176656123
-      modified: 1743176656123
+      modified: 1744860852073
       sortKey: -1743176656123
     children:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
@@ -466,7 +466,7 @@ collection:
     meta:
       id: fld_abd0e2b18cd748e88986858a24d41e5b
       created: 1743422047880
-      modified: 1743422047880
+      modified: 1744860834676
       sortKey: -1743422047880
     children:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
@@ -474,7 +474,7 @@ collection:
         meta:
           id: req_d0a8012e92bd4ac59f518a3503003f34
           created: 1743422069057
-          modified: 1744820587168
+          modified: 1744831027707
           isPrivate: false
           sortKey: -1743422078497
         method: POST
@@ -513,7 +513,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
+          token: 1|MtJNlTqpptqnyKsZ3fdfKrcHVaosMc0e5ISCAZ8z43299157
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -682,7 +682,7 @@ collection:
     meta:
       id: fld_a0c3dee6f049455497ebf7258d3415f6
       created: 1744817571014
-      modified: 1744817571014
+      modified: 1744860832548
       sortKey: -1744817571014
     children:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/gold-transactions
@@ -690,7 +690,7 @@ collection:
         meta:
           id: req_21e8addff4e142fe8abe30628c00319b
           created: 1744817617403
-          modified: 1744818737849
+          modified: 1744859882205
           isPrivate: false
           sortKey: -1744817630196
         method: GET
@@ -705,7 +705,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
+          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -719,7 +719,7 @@ collection:
         meta:
           id: req_4adbf23b20ef40228e2d3d6788f89393
           created: 1744817730853
-          modified: 1744823211712
+          modified: 1744864346159
           isPrivate: false
           sortKey: -1744817630296
         method: POST
@@ -731,9 +731,9 @@ collection:
             	"customerId": 2,
             	"agentId": 1,
             	"orderMasterId": 1,
-            	"goldValue": 2000,
-            	"goldRate": 5,
-            	"goldCash": 1000000,
+            	"goldValue": 10.345,
+            	"goldRate": 90000,
+            	"goldCash": 5200,
             	"transactionTypeId": 1
              }
         headers:
@@ -745,7 +745,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
+          token: 1|MtJNlTqpptqnyKsZ3fdfKrcHVaosMc0e5ISCAZ8z43299157
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -758,7 +758,7 @@ collection:
     meta:
       id: fld_f71f641174254c9fa251842efa99650c
       created: 1744822519301
-      modified: 1744822519301
+      modified: 1744860830352
       sortKey: -1744822519302
     children:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/agents
@@ -790,18 +790,75 @@ collection:
             send: true
             store: true
           rebuildPath: true
-  - name: Customer
+  - name: Transaction Types
     meta:
-      id: ws-req_c5ba2f1ff7bf4f1cacb2caeb71304e68
-      created: 1743172877882
-      modified: 1743172877882
-      sortKey: -1743172877882
-    settings:
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
+      id: fld_1fc15448ceb040f4b75d660bb26e5648
+      created: 1744860904815
+      modified: 1744860904815
+      sortKey: -1744860904815
+    children:
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/transaction-types
+        name: Get All Transaction Types
+        meta:
+          id: req_a218af27fca240a89a05921fd063c0bf
+          created: 1744860937498
+          modified: 1744860975596
+          isPrivate: false
+          sortKey: -1744860953589
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/transaction-types
+        name: Save Transaction Types
+        meta:
+          id: req_f81ca178f60a4679967ae81f02dcd563
+          created: 1744861428179
+          modified: 1744863372117
+          isPrivate: false
+          sortKey: -1744841753331.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"transactionTypeName": "silver2"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
