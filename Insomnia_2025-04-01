@@ -9,43 +9,9 @@ collection:
     meta:
       id: fld_bd36fe7a08534ca79a0ddfb43decae0f
       created: 1743173372251
-      modified: 1744860839780
+      modified: 1746130655727
       sortKey: -1743173372251
     children:
-      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
-        name: Login
-        meta:
-          id: req_a0a81299a98a43b993fcb75908b248f0
-          created: 1743172884136
-          modified: 1746118901695
-          isPrivate: false
-          sortKey: -1743173385659
-        method: POST
-        body:
-          mimeType: application/json
-          text: |-
-            {
-            	"email": "admin@gmail.com",
-            	"password": "12345678"
-            }
-        headers:
-          - name: Content-Type
-            value: application/json
-          - name: User-Agent
-            value: insomnia/11.0.1
-          - name: Accept
-            value: application/json
-        authentication:
-          type: bearer
-          token: 7|LEpu51mEXKV6bwNhj5HnXtxYNLgjz4KC17QI50pAd7aa44af
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/register
         name: Register
         meta:
@@ -80,6 +46,35 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
+        name: login
+        meta:
+          id: req_f15cfcae53a84927b0587190fe5f724e
+          created: 1746130219000
+          modified: 1746130670184
+          isPrivate: false
+          sortKey: -1743173385709
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "owner@gmail.com",
+            	"password": "12345678"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: Customer
     meta:
       id: fld_a2d2168159f84cc2962250ffe8895719
@@ -92,7 +87,7 @@ collection:
         meta:
           id: req_dacaccfe3c0a4d199fab48b0d3121746
           created: 1743176662827
-          modified: 1743609705836
+          modified: 1746128469099
           isPrivate: false
           sortKey: -1743176662827
         method: GET
@@ -103,7 +98,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|lHW4qGZ475RcvARhyx8IH2DPvbERIXxtp2fIpwi02dabc3ce
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -117,7 +112,7 @@ collection:
         meta:
           id: req_dfaff0c5260745079aef471efcbfe0f7
           created: 1743176831298
-          modified: 1743186881334
+          modified: 1746128478217
           isPrivate: false
           sortKey: -1743175024243
         method: POST
@@ -147,7 +142,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|PQWAFku3dRCALVKqhTkDXLibwLmQ1pPRoO2jMcyd4b481886
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -203,7 +198,7 @@ collection:
         meta:
           id: req_154a0f343ccf45c5bbc575a8810d28f1
           created: 1743187467878
-          modified: 1743610423047
+          modified: 1746128473113
           isPrivate: false
           sortKey: -1743175843535
         method: GET
@@ -214,7 +209,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|lHW4qGZ475RcvARhyx8IH2DPvbERIXxtp2fIpwi02dabc3ce
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -235,7 +230,7 @@ collection:
         meta:
           id: req_2659e3b9d997434e834a26c3564d2b0f
           created: 1743224081513
-          modified: 1743240723682
+          modified: 1746128445736
           isPrivate: false
           sortKey: -1743224081513
         method: DELETE
@@ -246,7 +241,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -260,7 +255,7 @@ collection:
         meta:
           id: req_51fd9d87861d470792da29611079b346
           created: 1743224619107
-          modified: 1743275658393
+          modified: 1746128452160
           isPrivate: false
           sortKey: -1743200372170
         method: GET
@@ -271,7 +266,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -285,7 +280,7 @@ collection:
         meta:
           id: req_18c2021e30994458b6212840b1edf7e4
           created: 1743239888496
-          modified: 1743242794249
+          modified: 1746128458287
           isPrivate: false
           sortKey: -1743188517498.5
         method: PUT
@@ -304,7 +299,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 2|61rgGjxSmtAhV9PcjNxr1ZCIkEqUKww6mLMVuoD36e32eb03
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -325,7 +320,7 @@ collection:
         meta:
           id: req_3b1894c7b8df4babaaadb1f19421f8a5
           created: 1743273963231
-          modified: 1746078844007
+          modified: 1746128371428
           isPrivate: false
           sortKey: -1743273963232
         method: POST
@@ -345,7 +340,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 4|LojlLrHwtDGF13WxWPZ8BScle3RrMHozYPgW60NJe4043780
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -359,7 +354,7 @@ collection:
         meta:
           id: req_8c4bb4a2ee9b4652ab7eaa687aeaaa5a
           created: 1743280276655
-          modified: 1746078739569
+          modified: 1746128380243
           isPrivate: false
           sortKey: -1743249022372.5
         method: PUT
@@ -387,7 +382,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 4|LojlLrHwtDGF13WxWPZ8BScle3RrMHozYPgW60NJe4043780
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -401,7 +396,7 @@ collection:
         meta:
           id: req_2992424a06e744b893821424af1615c8
           created: 1743332224874
-          modified: 1746074833602
+          modified: 1746128391632
           isPrivate: false
           sortKey: -1743236551942.75
         method: GET
@@ -416,7 +411,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 4|LojlLrHwtDGF13WxWPZ8BScle3RrMHozYPgW60NJe4043780
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -430,7 +425,7 @@ collection:
         meta:
           id: req_14efbc4a89b049d9bc6c6caf901f237a
           created: 1743333241918
-          modified: 1746079965901
+          modified: 1746128388023
           isPrivate: false
           sortKey: -1743242787157.625
         method: DELETE
@@ -445,7 +440,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 4|LojlLrHwtDGF13WxWPZ8BScle3RrMHozYPgW60NJe4043780
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -459,7 +454,7 @@ collection:
         meta:
           id: req_f0010038932a464c9541e44cb9801ed9
           created: 1746043226027
-          modified: 1746075610134
+          modified: 1746128395710
           isPrivate: false
           sortKey: -1743230316727.875
         method: GET
@@ -474,7 +469,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 4|LojlLrHwtDGF13WxWPZ8BScle3RrMHozYPgW60NJe4043780
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -495,7 +490,7 @@ collection:
         meta:
           id: req_5cb20cd7817a4900b7637f59f528429c
           created: 1743422069057
-          modified: 1744831027707
+          modified: 1746128343413
           isPrivate: false
           sortKey: -1743422078497
         method: POST
@@ -534,7 +529,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MtJNlTqpptqnyKsZ3fdfKrcHVaosMc0e5ISCAZ8z43299157
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -548,7 +543,7 @@ collection:
         meta:
           id: req_a81a44e5108a40ec9c5dec9dc20dca7c
           created: 1743576388542
-          modified: 1743576404698
+          modified: 1746128349052
           isPrivate: false
           sortKey: -1743348020864.5
         method: GET
@@ -563,7 +558,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -577,7 +572,7 @@ collection:
         meta:
           id: req_f99a64aeff7840669c8dea9a4475bf3b
           created: 1743577148785
-          modified: 1743577196260
+          modified: 1746128355532
           isPrivate: false
           sortKey: -1743310992048.25
         method: GET
@@ -592,7 +587,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -606,7 +601,7 @@ collection:
         meta:
           id: req_5f6370a6467941b38c627b333dfc6044
           created: 1743577240296
-          modified: 1743577271537
+          modified: 1746128362669
           isPrivate: false
           sortKey: -1743292477640.125
         method: GET
@@ -621,7 +616,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|cYLkIvCel0Ve8FHNfYUPttUm6o02d75YZSt790wt43d4e315
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -642,7 +637,7 @@ collection:
         meta:
           id: req_2328c4123e5a4349a90d0beabc3a886d
           created: 1744211175759
-          modified: 1746037345205
+          modified: 1746128309425
           isPrivate: false
           sortKey: -1744211181111
         method: POST
@@ -661,7 +656,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 3|ZwvZynTRMvIrg9pwuYn2aY7V04ZrR2d8tHfDo3pv332d1ee2
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -675,7 +670,7 @@ collection:
         meta:
           id: req_d287dc8f8e894628846a29171619852b
           created: 1744213794517
-          modified: 1746026013701
+          modified: 1746128332819
           isPrivate: false
           sortKey: -1743816629804
         method: GET
@@ -690,7 +685,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|V5pSgq7MpIEyxvkXJOu3xuIBfKCkF6GFvi0H3RH0ae8a995c
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -704,7 +699,7 @@ collection:
         meta:
           id: req_9acc6580f56242b08a39f4aa7b01589c
           created: 1746026092801
-          modified: 1746035818901
+          modified: 1746128318182
           isPrivate: false
           sortKey: -1744013905457.5
         method: PUT
@@ -723,7 +718,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 3|ZwvZynTRMvIrg9pwuYn2aY7V04ZrR2d8tHfDo3pv332d1ee2
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -737,7 +732,7 @@ collection:
         meta:
           id: req_23beae54938a44b9ac27d4c6d6949ef7
           created: 1746037281276
-          modified: 1746038311751
+          modified: 1746128325701
           isPrivate: false
           sortKey: -1743915267630.75
         method: DELETE
@@ -756,7 +751,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 3|ZwvZynTRMvIrg9pwuYn2aY7V04ZrR2d8tHfDo3pv332d1ee2
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -777,7 +772,7 @@ collection:
         meta:
           id: req_446ed7c954d74248868695ef31db0f2d
           created: 1744817617403
-          modified: 1744859882205
+          modified: 1746128301209
           isPrivate: false
           sortKey: -1744817630196
         method: GET
@@ -792,7 +787,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -806,7 +801,7 @@ collection:
         meta:
           id: req_52dcca72932743a7a21b5ef79ec72ddc
           created: 1744817730853
-          modified: 1744864346159
+          modified: 1746128296338
           isPrivate: false
           sortKey: -1744817630296
         method: POST
@@ -832,7 +827,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MtJNlTqpptqnyKsZ3fdfKrcHVaosMc0e5ISCAZ8z43299157
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -853,7 +848,7 @@ collection:
         meta:
           id: req_752dc752b5fa4f5ba2599614f68fb728
           created: 1744822535276
-          modified: 1744822565660
+          modified: 1746128284892
           isPrivate: false
           sortKey: -1744822553074
         method: GET
@@ -868,7 +863,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 1|MDqyizrhyelukU3esJhhUlIHiK3iqxKrV2yAIRfR46d38345
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -889,7 +884,7 @@ collection:
         meta:
           id: req_7223cf7bee924ba4ab789e6139ff2de5
           created: 1744860937498
-          modified: 1744860975596
+          modified: 1746128268585
           isPrivate: false
           sortKey: -1744860953589
         method: GET
@@ -904,7 +899,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -918,7 +913,7 @@ collection:
         meta:
           id: req_24ae6e557ccc478498d8c757ff302a1c
           created: 1744861428179
-          modified: 1744863372117
+          modified: 1746128274514
           isPrivate: false
           sortKey: -1744841753331.5
         method: POST
@@ -937,7 +932,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 2|V8ODIpLIddv6ACPNz9cfXw1OAG3jUWiwBibEhJ1Lb50e53a5
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -958,7 +953,7 @@ collection:
         meta:
           id: req_76efc66239f04ee296b32657fea47c51
           created: 1746080457644
-          modified: 1746080620092
+          modified: 1746128259507
           isPrivate: false
           sortKey: -1746080490149
         method: GET
@@ -973,7 +968,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 4|LojlLrHwtDGF13WxWPZ8BScle3RrMHozYPgW60NJe4043780
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -994,7 +989,7 @@ collection:
         meta:
           id: req_ea78ae6fd8554b1790e3a86b30ff4c0a
           created: 1746103937273
-          modified: 1746119306865
+          modified: 1746128070279
           isPrivate: false
           sortKey: -1743273963232
         method: POST
@@ -1002,9 +997,9 @@ collection:
           mimeType: application/json
           text: |-
             {
-              "employeeName": "Sourav Ganguly 52",
-              "mobile": "12345657870",
-              "email": "sach7i5n@gmail.com",
+              "employeeName": "Sourav Ganguely 52",
+              "mobile": "12345657r870",
+              "email": "sach7i5n@gmaril.com",
               "departmentId": 2,
               "designationId": 1
             }
@@ -1017,7 +1012,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 7|LEpu51mEXKV6bwNhj5HnXtxYNLgjz4KC17QI50pAd7aa44af
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -1031,7 +1026,7 @@ collection:
         meta:
           id: req_186b6c8f67b1477494e54572ce60255d
           created: 1746103937275
-          modified: 1746104249767
+          modified: 1746130643009
           isPrivate: false
           sortKey: -1743236551942.75
         method: GET
@@ -1046,7 +1041,8 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 5|uLvYv00XYcH7XUGDOjoywP80X1inLAb88a2aWl2C531fc783
+          token: "{{ auth.bearerToken }}"
+          disabled: false
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -1060,7 +1056,7 @@ collection:
         meta:
           id: req_1da5ee5da8874c069cbc5b394a2b3224
           created: 1746103937275
-          modified: 1746122900847
+          modified: 1746128409136
           isPrivate: false
           sortKey: -1743249022372.5
         method: PUT
@@ -1083,7 +1079,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 7|LEpu51mEXKV6bwNhj5HnXtxYNLgjz4KC17QI50pAd7aa44af
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -1097,7 +1093,7 @@ collection:
         meta:
           id: req_8f98573fc64143858a730004244cceec
           created: 1746103937276
-          modified: 1746122761467
+          modified: 1746128417836
           isPrivate: false
           sortKey: -1743242787157.625
         method: DELETE
@@ -1112,7 +1108,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 7|LEpu51mEXKV6bwNhj5HnXtxYNLgjz4KC17QI50pAd7aa44af
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -1126,7 +1122,7 @@ collection:
         meta:
           id: req_3f4a39854e2b4675a8e6338f4e2dfd33
           created: 1746103937277
-          modified: 1746117711583
+          modified: 1746128433552
           isPrivate: false
           sortKey: -1743230316727.875
         method: GET
@@ -1141,7 +1137,7 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: 6|BpoNIOqGI2pxb5kYJaCFtzA4qQi2lWLW5fDU4A9R277a54ef
+          token: "{{ auth.bearerToken }}"
           disabled: false
         settings:
           renderRequestBody: true
@@ -1162,8 +1158,8 @@ environments:
   meta:
     id: env_5d34dc8fc49b4dba93c5261f88c40494
     created: 1743172793140
-    modified: 1746104486050
+    modified: 1746130699707
     isPrivate: false
   data:
     auth:
-      bearerToken: 5|uLvYv00XYcH7XUGDOjoywP80X1inLAb88a2aWl2C531fc783
+      bearerToken: 12|69O0z9qbNI7iKIo9c7R5DLV81tJtGyPyciDdg5f83a6e0685
