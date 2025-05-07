@@ -1,21 +1,21 @@
 type: collection.insomnia.rest/5.0
 name: Solid_gold
 meta:
-  id: wrk_fff9a558a54a41509cf58d31813c2bf2
-  created: 1746103669655
-  modified: 1746103669655
+  id: wrk_38f27cd525d14ffabc14a17bb53d4ce1
+  created: 1746262481793
+  modified: 1746262481793
 collection:
   - name: User
     meta:
-      id: fld_bd36fe7a08534ca79a0ddfb43decae0f
+      id: fld_b0f7170c44a943caa759cadbbc1657ac
       created: 1743173372251
-      modified: 1746130655727
+      modified: 1746630839729
       sortKey: -1743173372251
     children:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/register
         name: Register
         meta:
-          id: req_c4c6b5ca90b340c7afdc391e5992fba1
+          id: req_8a37715a139a43fca980154bf69224ee
           created: 1743173483076
           modified: 1743176588134
           isPrivate: false
@@ -49,7 +49,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/login
         name: login
         meta:
-          id: req_f15cfcae53a84927b0587190fe5f724e
+          id: req_826ccbba62164fca8d4922d6cb7085e5
           created: 1746130219000
           modified: 1746130670184
           isPrivate: false
@@ -75,9 +75,63 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/me
+        name: About Me
+        meta:
+          id: req_c0d6db322d7a46b5b0372ee39434318c
+          created: 1746630861225
+          modified: 1746631131636
+          isPrivate: false
+          sortKey: -1743173385659
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: "{{ auth.bearerToken }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/logout
+        name: logout
+        meta:
+          id: req_409f1b8ac46c45fd894bd7a31f833171
+          created: 1746632198367
+          modified: 1746632234042
+          isPrivate: false
+          sortKey: -1743173385684
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: "{{ auth.bearerToken }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: Customer
     meta:
-      id: fld_a2d2168159f84cc2962250ffe8895719
+      id: fld_b21aa69df626412899eb4775a00b0588
       created: 1743176656123
       modified: 1744860852073
       sortKey: -1743176656123
@@ -85,7 +139,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
         name: Get Customers
         meta:
-          id: req_dacaccfe3c0a4d199fab48b0d3121746
+          id: req_3645dd2aa71745a98af013a8c2c3c7b6
           created: 1743176662827
           modified: 1746128469099
           isPrivate: false
@@ -110,7 +164,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers
         name: Save Customers
         meta:
-          id: req_dfaff0c5260745079aef471efcbfe0f7
+          id: req_a64e9b3ac01c44dba1fb69eea0c5349b
           created: 1743176831298
           modified: 1746128478217
           isPrivate: false
@@ -154,7 +208,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers/2
         name: Update Customers
         meta:
-          id: req_011e6e953cc34baca51e5d179613f301
+          id: req_593a9c90e05d406494b42a7b4c598ae0
           created: 1743184829047
           modified: 1743238132435
           isPrivate: false
@@ -196,7 +250,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customers/2
         name: Get Customers by id
         meta:
-          id: req_154a0f343ccf45c5bbc575a8810d28f1
+          id: req_0c488d7f44f148929ba6829ab9a70c2b
           created: 1743187467878
           modified: 1746128473113
           isPrivate: false
@@ -220,7 +274,7 @@ collection:
           rebuildPath: true
   - name: Customer Categories
     meta:
-      id: fld_f2978beedc2548abb546673376d77d81
+      id: fld_3af34e579f004018a0f890e82002bc15
       created: 1743224073143
       modified: 1746103883967
       sortKey: -1743224073143
@@ -228,7 +282,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories/4
         name: Delete Customer Categories
         meta:
-          id: req_2659e3b9d997434e834a26c3564d2b0f
+          id: req_5243c45ef97a4523ad1919b913538fcc
           created: 1743224081513
           modified: 1746128445736
           isPrivate: false
@@ -253,7 +307,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories
         name: get all Categories
         meta:
-          id: req_51fd9d87861d470792da29611079b346
+          id: req_1e210032913c476daf9a7932d8f116bb
           created: 1743224619107
           modified: 1746128452160
           isPrivate: false
@@ -278,7 +332,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/customer-categories/2
         name: Update  Categorie
         meta:
-          id: req_18c2021e30994458b6212840b1edf7e4
+          id: req_3af1085b5d034c4e9890b850ab07071e
           created: 1743239888496
           modified: 1746128458287
           isPrivate: false
@@ -310,7 +364,7 @@ collection:
           rebuildPath: true
   - name: Product Categories
     meta:
-      id: fld_6798f5efcb624fe5aee7bad239536795
+      id: fld_01fc1359574e40819ffc89f4d0ad2b2f
       created: 1743273900966
       modified: 1743273900966
       sortKey: -1743273900966
@@ -318,9 +372,9 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories
         name: Save Product Category
         meta:
-          id: req_3b1894c7b8df4babaaadb1f19421f8a5
+          id: req_57b2d714346b477aabe13fb6f7368b08
           created: 1743273963231
-          modified: 1746128371428
+          modified: 1746262740062
           isPrivate: false
           sortKey: -1743273963232
         method: POST
@@ -341,6 +395,7 @@ collection:
         authentication:
           type: bearer
           token: "{{ auth.bearerToken }}"
+          disabled: true
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -352,7 +407,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/2
         name: Update Product Category
         meta:
-          id: req_8c4bb4a2ee9b4652ab7eaa687aeaaa5a
+          id: req_d7a63efc6b954e759d5b0cfd2044abb8
           created: 1743280276655
           modified: 1746128380243
           isPrivate: false
@@ -366,6 +421,7 @@ collection:
               "productCategoryName": "abcd Electrornics4dlw 23r23",
               "productCategoryDescription": "All electronic devices including smartphones and laptops",
               "inforce": true
+
 
 
 
@@ -394,7 +450,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories
         name: Get all Product Categories
         meta:
-          id: req_2992424a06e744b893821424af1615c8
+          id: req_234c1a2221da4fc7bf657f1b19713aff
           created: 1743332224874
           modified: 1746128391632
           isPrivate: false
@@ -423,7 +479,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/3
         name: Delete Product Category
         meta:
-          id: req_14efbc4a89b049d9bc6c6caf901f237a
+          id: req_ce677b6ea2984294b66711a525895471
           created: 1743333241918
           modified: 1746128388023
           isPrivate: false
@@ -449,12 +505,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/2
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/product-categories/1
         name: Get  Product Categories by ID
         meta:
-          id: req_f0010038932a464c9541e44cb9801ed9
+          id: req_9c6218fe2bf34cb2b96df869d1e92bc0
           created: 1746043226027
-          modified: 1746128395710
+          modified: 1746617275922
           isPrivate: false
           sortKey: -1743230316727.875
         method: GET
@@ -480,7 +536,7 @@ collection:
           rebuildPath: true
   - name: Order
     meta:
-      id: fld_35bed5eb59c14096b38aa115d2d30b3a
+      id: fld_ad69cd05f8a84392a3e5b7c54286571c
       created: 1743422047880
       modified: 1744860834676
       sortKey: -1743422047880
@@ -488,7 +544,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
         name: Save Order
         meta:
-          id: req_5cb20cd7817a4900b7637f59f528429c
+          id: req_817669b08b8a4cc7bcb375ff41e53dfe
           created: 1743422069057
           modified: 1746128343413
           isPrivate: false
@@ -541,9 +597,9 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders
         name: get All Orders
         meta:
-          id: req_a81a44e5108a40ec9c5dec9dc20dca7c
+          id: req_e2b8faeecec84780a6dac340c5216dba
           created: 1743576388542
-          modified: 1746128349052
+          modified: 1746617129645
           isPrivate: false
           sortKey: -1743348020864.5
         method: GET
@@ -559,6 +615,7 @@ collection:
         authentication:
           type: bearer
           token: "{{ auth.bearerToken }}"
+          disabled: false
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -570,7 +627,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/orders?paginate=true
         name: get All Orders with pagination
         meta:
-          id: req_f99a64aeff7840669c8dea9a4475bf3b
+          id: req_5746e975a5754a68989204eeaee5ff40
           created: 1743577148785
           modified: 1746128355532
           isPrivate: false
@@ -599,7 +656,7 @@ collection:
       - url: http://127.0.0.1/solid_gold/solid_gold_api/public/api/orders?page=2
         name: test get All Orders with pagination
         meta:
-          id: req_5f6370a6467941b38c627b333dfc6044
+          id: req_730ca28f5f424ae4b9cb23a60b4b9120
           created: 1743577240296
           modified: 1746128362669
           isPrivate: false
@@ -627,7 +684,7 @@ collection:
           rebuildPath: true
   - name: Price Code
     meta:
-      id: fld_c1538d96ac654a8dbcd6658ed7b10a35
+      id: fld_5df628f7599341d99d5768596199a052
       created: 1744211153125
       modified: 1744211153125
       sortKey: -1744211153125
@@ -635,7 +692,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/price-codes
         name: Save Price Code
         meta:
-          id: req_2328c4123e5a4349a90d0beabc3a886d
+          id: req_4ee78db37d4c4fc4b96633a4f56d7d9c
           created: 1744211175759
           modified: 1746128309425
           isPrivate: false
@@ -668,7 +725,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/price-codes
         name: Get Price Codes
         meta:
-          id: req_d287dc8f8e894628846a29171619852b
+          id: req_7f4e5768eeff481db3622a7907834214
           created: 1744213794517
           modified: 1746128332819
           isPrivate: false
@@ -697,7 +754,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/price-codes/28
         name: Update Price Code
         meta:
-          id: req_9acc6580f56242b08a39f4aa7b01589c
+          id: req_5dd35bbf6674462b903c17598b9f1bcb
           created: 1746026092801
           modified: 1746128318182
           isPrivate: false
@@ -730,7 +787,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/price-codes/2
         name: Delete Price Code
         meta:
-          id: req_23beae54938a44b9ac27d4c6d6949ef7
+          id: req_ba311a02979447098ae746e830d0f8ac
           created: 1746037281276
           modified: 1746128325701
           isPrivate: false
@@ -762,7 +819,7 @@ collection:
           rebuildPath: true
   - name: Gold Transaction
     meta:
-      id: fld_89743a671c314a059edbfd697666fed0
+      id: fld_bb505e7a1ac24294a40b91a41623d6e0
       created: 1744817571014
       modified: 1746103850682
       sortKey: -1744817571014
@@ -770,7 +827,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/gold-transactions
         name: Get All Gold Transactions
         meta:
-          id: req_446ed7c954d74248868695ef31db0f2d
+          id: req_5c4482d5b07f43c3b01112b88a93883c
           created: 1744817617403
           modified: 1746128301209
           isPrivate: false
@@ -799,7 +856,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/gold-transactions
         name: Save Gold Transactions
         meta:
-          id: req_52dcca72932743a7a21b5ef79ec72ddc
+          id: req_37ac2fcad9a8424591bab01fb00563fb
           created: 1744817730853
           modified: 1746128296338
           isPrivate: false
@@ -838,7 +895,7 @@ collection:
           rebuildPath: true
   - name: Agent
     meta:
-      id: fld_832b40e844ab436487ba8c9a2d8fe18d
+      id: fld_e50c8c5b1f634db5bd783f0f0e015dc5
       created: 1744822519301
       modified: 1746103848982
       sortKey: -1744822519302
@@ -846,7 +903,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/agents
         name: Get All Agents
         meta:
-          id: req_752dc752b5fa4f5ba2599614f68fb728
+          id: req_24bc74b7c5a840248594346f04e82662
           created: 1744822535276
           modified: 1746128284892
           isPrivate: false
@@ -874,7 +931,7 @@ collection:
           rebuildPath: true
   - name: Transaction Types
     meta:
-      id: fld_53b239b7bd014e309b84252d497ebb5c
+      id: fld_227a1de6c616435bbc3bcf06db7a0fd9
       created: 1744860904815
       modified: 1746103847356
       sortKey: -1744860904815
@@ -882,7 +939,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/transaction-types
         name: Get All Transaction Types
         meta:
-          id: req_7223cf7bee924ba4ab789e6139ff2de5
+          id: req_ee233cd09a594d05b0f7979ba98a3e47
           created: 1744860937498
           modified: 1746128268585
           isPrivate: false
@@ -911,7 +968,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/transaction-types
         name: Save Transaction Types
         meta:
-          id: req_24ae6e557ccc478498d8c757ff302a1c
+          id: req_c686014f589946f2bc5ca3922d12c1ea
           created: 1744861428179
           modified: 1746128274514
           isPrivate: false
@@ -943,7 +1000,7 @@ collection:
           rebuildPath: true
   - name: Product
     meta:
-      id: fld_861afc70240c421b8b442ffaef2141e7
+      id: fld_a8c5ab16806943f1a20d2965f396b333
       created: 1746080431438
       modified: 1746080494000
       sortKey: -1746080431438
@@ -951,7 +1008,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/products/category/1
         name: Get  Product by Categories ID
         meta:
-          id: req_76efc66239f04ee296b32657fea47c51
+          id: req_ce2585a0d6ba4965bbff67874be09424
           created: 1746080457644
           modified: 1746128259507
           isPrivate: false
@@ -979,7 +1036,7 @@ collection:
           rebuildPath: true
   - name: Employees
     meta:
-      id: fld_7b196e9be98141c2976a6494af604734
+      id: fld_8def0df1ad5840a5bdbab2e62081ad42
       created: 1746103937272
       modified: 1746103960053
       sortKey: -1743248987054.5
@@ -987,7 +1044,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/employees
         name: Save Employee
         meta:
-          id: req_ea78ae6fd8554b1790e3a86b30ff4c0a
+          id: req_f78ae690f3284e80828d052895a11e97
           created: 1746103937273
           modified: 1746128070279
           isPrivate: false
@@ -1021,40 +1078,10 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/employees
-        name: Get all Employees
-        meta:
-          id: req_186b6c8f67b1477494e54572ce60255d
-          created: 1746103937275
-          modified: 1746130643009
-          isPrivate: false
-          sortKey: -1743236551942.75
-        method: GET
-        body:
-          mimeType: application/json
-        headers:
-          - name: Content-Type
-            value: application/json
-          - name: User-Agent
-            value: insomnia/11.0.1
-          - name: Accept
-            value: application/json
-        authentication:
-          type: bearer
-          token: "{{ auth.bearerToken }}"
-          disabled: false
-        settings:
-          renderRequestBody: true
-          encodeUrl: true
-          followRedirects: global
-          cookies:
-            send: true
-            store: true
-          rebuildPath: true
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/employees/2
         name: Update Employee
         meta:
-          id: req_1da5ee5da8874c069cbc5b394a2b3224
+          id: req_0e2c29bb489a4d5fa288b2dd2235fbc7
           created: 1746103937275
           modified: 1746128409136
           isPrivate: false
@@ -1088,10 +1115,40 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/employees
+        name: Get all Employees
+        meta:
+          id: req_1c6d23aa8715457b94414a739a8fba8a
+          created: 1746103937275
+          modified: 1746262655202
+          isPrivate: false
+          sortKey: -1743236551942.75
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+          - name: Accept
+            value: application/json
+        authentication:
+          type: bearer
+          disabled: false
+          token: "{{ auth.bearerToken }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/employees/5
         name: Delete Employee
         meta:
-          id: req_8f98573fc64143858a730004244cceec
+          id: req_62b47a214e9c405590e63f799992d9e6
           created: 1746103937276
           modified: 1746128417836
           isPrivate: false
@@ -1120,7 +1177,7 @@ collection:
       - url: 127.0.0.1/solid_gold/solid_gold_api/public/api/employees/28
         name: Get  Employees by ID
         meta:
-          id: req_3f4a39854e2b4675a8e6338f4e2dfd33
+          id: req_420d7cc5207747f48a1db3f751c3ba8e
           created: 1746103937277
           modified: 1746128433552
           isPrivate: false
@@ -1137,8 +1194,8 @@ collection:
             value: application/json
         authentication:
           type: bearer
-          token: "{{ auth.bearerToken }}"
           disabled: false
+          token: "{{ auth.bearerToken }}"
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -1150,16 +1207,16 @@ collection:
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_46ca60478df342b19c673a004d4af5e2
+    id: jar_46758d8595d04fd1b67f9dddf6810e97
     created: 1743172793144
     modified: 1743172793144
 environments:
   name: Base Environment
   meta:
-    id: env_5d34dc8fc49b4dba93c5261f88c40494
+    id: env_3fe21fb0d30c434589306b8dc89f11ee
     created: 1743172793140
-    modified: 1746130699707
+    modified: 1746632409152
     isPrivate: false
   data:
     auth:
-      bearerToken: 12|69O0z9qbNI7iKIo9c7R5DLV81tJtGyPyciDdg5f83a6e0685
+      bearerToken: 14|A7D9RWLDUgj6xKMy4DRkh7DCAm8hF8h2XSlUVFYlb1e087db
